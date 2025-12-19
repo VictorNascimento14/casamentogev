@@ -1,69 +1,163 @@
-# Welcome to your Lovable project
+# 💍 Casamento G&V
 
-## Project info
+Uma aplicação web moderna e elegante para celebrar e compartilhar todos os detalhes do casamento de Graziella e Victor.
 
-**URL**: https://lovable.dev/projects/4dab50b8-6c7f-41e9-aa64-56ab823b4093
+## ✨ Demonstração
 
-## How can I edit this code?
+![Screenshot Principal]()
 
-There are several ways of editing your application.
+## 🎯 Sobre o Projeto
 
-**Use Lovable**
+Este site foi desenvolvido para proporcionar aos convidados uma experiência única e interativa, centralizando todas as informações importantes do casamento em um único lugar. Com um design moderno e responsivo, os visitantes podem confirmar presença, acessar a lista de presentes e obter todas as informações sobre a cerimônia.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4dab50b8-6c7f-41e9-aa64-56ab823b4093) and start prompting.
+### 🌟 Funcionalidades
 
-Changes made via Lovable will be committed automatically to this repo.
+- 📱 **Design Responsivo** - Interface otimizada para todos os dispositivos
+- 💌 **Confirmação de Presença** - Sistema de RSVP integrado
+- 🎁 **Lista de Presentes** - Visualização e seleção de presentes
+- 📍 **Localização** - Informações e mapas dos locais do evento
+- 📅 **Cronograma** - Horários detalhados da cerimônia e festa
+- 📸 **Galeria** - Fotos do casal e momentos especiais
+- 🎨 **Interface Moderna** - Design elegante com animações suaves
 
-**Use your preferred IDE**
+## 🚀 Tecnologias Utilizadas
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Este projeto foi construído com as seguintes tecnologias:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **[React](https://reactjs.org/)** - Biblioteca JavaScript para construção de interfaces
+- **[TypeScript](https://www.typescriptlang.org/)** - Superset JavaScript com tipagem estática
+- **[Vite](https://vitejs.dev/)** - Build tool moderna e rápida
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utilitário
+- **[shadcn/ui](https://ui.shadcn.com/)** - Componentes de UI reutilizáveis e estilizados
 
-Follow these steps:
+## 📦 Instalação
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Pré-requisitos
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Certifique-se de ter o Node.js instalado em sua máquina. Recomendamos usar o [nvm](https://github.com/nvm-sh/nvm) para gerenciar versões do Node.js.
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Passo a passo
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+1. **Clone o repositório**
+```bash
+git clone https://github.com/VictorNascimento14/casamentogev.git
 ```
 
-**Edit a file directly in GitHub**
+2. **Navegue até o diretório do projeto**
+```bash
+cd casamentogev
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. **Instale as dependências**
+```bash
+npm install
+# ou
+bun install
+```
 
-**Use GitHub Codespaces**
+4. **Inicie o servidor de desenvolvimento**
+```bash
+npm run dev
+# ou
+bun dev
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+5. **Acesse a aplicação**
+Abra seu navegador e acesse `http://localhost:5173`
 
-## What technologies are used for this project?
+## 🛠️ Scripts Disponíveis
 
-This project is built with .
+```bash
+# Inicia o servidor de desenvolvimento
+npm run dev
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Cria a build de produção
+npm run build
 
-## How can I deploy this project?
+# Visualiza a build de produção localmente
+npm run preview
 
-Simply open [Lovable](https://lovable.dev/projects/4dab50b8-6c7f-41e9-aa64-56ab823b4093) and click on Share -> Publish.
+# Executa o linter
+npm run lint
+```
 
-## I want to use a custom domain - is that possible?
+## 📁 Estrutura do Projeto
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+```
+casamentogev/
+├── public/              # Arquivos estáticos
+├── src/
+│   ├── components/      # Componentes React reutilizáveis
+│   ├── pages/          # Páginas da aplicação
+│   ├── styles/         # Estilos globais
+│   ├── utils/          # Funções utilitárias
+│   ├── App.tsx         # Componente principal
+│   └── main.tsx        # Ponto de entrada da aplicação
+├── index.html
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── vite.config.ts
+```
+
+## 🎨 Personalização
+
+Para personalizar o projeto para o seu próprio casamento:
+
+1. **Cores e Tema**: Edite o arquivo `tailwind.config.ts`
+2. **Conteúdo**: Atualize os textos nos componentes da pasta `src/components/`
+3. **Imagens**: Substitua as imagens na pasta `public/`
+4. **Informações**: Modifique os dados do evento nos arquivos de configuração
+
+## 🌐 Deploy
+
+Este projeto pode ser facilmente deployado em diversas plataformas:
+
+### Lovable (Recomendado)
+1. Acesse [Lovable](https://lovable.dev/projects/4dab50b8-6c7f-41e9-aa64-56ab823b4093)
+2. Clique em Share -> Publish
+
+### Netlify
+```bash
+npm run build
+# Faça upload da pasta 'dist' no Netlify
+```
+
+### Vercel
+```bash
+npm run build
+# Deploy usando o Vercel CLI ou interface web
+```
+
+## 🤝 Contribuindo
+
+Contribuições são sempre bem-vindas! Se você tem alguma sugestão para melhorar este projeto:
+
+1. Faça um Fork do projeto
+2. Crie uma Branch para sua Feature (`git checkout -b feature/NovaFuncionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a Branch (`git push origin feature/NovaFuncionalidade`)
+5. Abra um Pull Request
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👥 Autores
+
+**Victor Nascimento**
+- GitHub: [@VictorNascimento14](https://github.com/VictorNascimento14)
+
+## 💝 Agradecimentos
+
+- À comunidade React e suas incríveis ferramentas
+- Aos designers e desenvolvedores que inspiram com seus trabalhos
+- A todos que contribuíram com sugestões e feedback
+
+---
+
+<div align="center">
+  Feito com ❤️ para celebrar um amor especial
+  <br/>
+  <strong>Geovana & Victor</strong>
+</div>
