@@ -4,7 +4,7 @@ Uma aplicação web moderna e elegante para celebrar e compartilhar todos os det
 
 ## ✨ Demonstração
 
-![Screenshot Principal]()
+![Screenshot Principal](casamento.png)
 
 ## 🎯 Sobre o Projeto
 
